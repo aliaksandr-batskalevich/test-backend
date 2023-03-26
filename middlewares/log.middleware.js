@@ -1,7 +1,5 @@
 const logMiddleware = (req, res, next) => {
-    console.log(req.socket.remoteAddress);
-
-    console.log(`Request ${req.method} from ${req.headers.host}.`);
+    console.log(`Request ${req.method} from ${req.socket.remoteAddress}.`);
     return next();
 };
 
