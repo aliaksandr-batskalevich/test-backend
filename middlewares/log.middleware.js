@@ -1,5 +1,5 @@
 const logMiddleware = (req, res, next) => {
-    console.log(`Request ${req.method} from ${req.get('origin')}.`);
+    console.log(`Request ${req.method} from ${req.headers.origin}.`);
     return next();
 };
 
